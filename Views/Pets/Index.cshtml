@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PetStoreApp_Project.Models.Pet>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1 style="text-align:center; margin:0;">Pets Data</h1>
+
+<p>
+    <a class="main-btn" asp-action="Create">Create New</a>
+</p>
+<table id="tbn" width="100%" style="text-align:center;border:2px solid black;">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+           <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                <img src="~/Images/@Url.Content(@item.Image)" height="50px" width="50px">
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.ImgId" class="main-btn">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ImgId" class="main-btn">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ImgId" class="main-btn">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

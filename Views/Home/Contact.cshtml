@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+<Section style="height: 100vh; padding:28rem 0;" id="contact" class="form-bg">
+    <h2 style="text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    color: var(--green);">Contact Us</h2>
+    <h3>Have Any Qestions Ask Us</h3>
+    <form  class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <label for="username">Username</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email address" required>
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Type subject" required>
+        <label for="msg">Message</label>
+        <textarea name="msg" style="margin: 1rem auto;width: 100%;padding: 0.8rem 0.5rem;border: 2px solid var(--orange);border-radius: 24px;font-size: 0.9rem;" id="msg" cols="30" rows="10" placeholder="Type..." required></textarea>
+        <input class="send" type="submit" name="send" id="signup" value="Send Message">
+    </form>
+</Section>

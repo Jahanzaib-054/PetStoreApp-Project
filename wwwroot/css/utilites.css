@@ -1,0 +1,157 @@
+#logo {
+    margin: 0.2rem 0.8rem;
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.8em;
+}
+#logo svg {
+    fill: var(--orange);
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    top: 0.5rem
+}
+#logo span {
+    color: var(--white);
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Rubik',sans-serif;
+}
+
+.btn-sec {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Rubik',sans-serif;
+}
+.btn-sec:hover {
+    cursor: pointer;
+    background-color: hsl(15, 100%, 67%);
+    color: var(--blackgrey);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsla(132, 65%, 60%, 1);
+    color: var(--blackgrey);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+}
+
+.link:hover {
+    color: var(--orange);
+    background-color: hsla(0, 0%, 12%,1);
+}
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    transform: scale(1.3);
+    margin-top: 0.5rem;
+}
+
+.icon:hover {
+    background-color: var(--orange);
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 2px var(--orange);
+}
+
+.cards {
+    box-shadow: 1px 1px 5px 2px hsl(0, 0%, 53%);
+    border-radius: 1rem;
+    transition: 0.2s;
+    height: 14rem;
+    width: 26rem;
+}
+.cards img {
+    height: 5rem;
+}
+
+.cards:hover {
+    transform: scale(1.1,1.1);
+}
+
+.cards:hover img {
+    filter: hue-rotate(132deg) brightness(130%);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white );
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.per-cards {
+    width: 25rem;
+    margin: 2rem 2rem;
+    box-shadow: 1px 1px 5px 2px hsl(0, 0%, 53%);
+    border-radius: 1rem;
+}
+
+ .per-cards h3 {
+        font-size: 2rem;
+        color: var(--blackgrey);
+        border-bottom: 1px groove hsla(0, 0%, 53%, 0.5);
+        margin: 2rem 0 1rem 0;
+    }
+
+    .per-cards p {
+        font-size: 1.2rem;
+        color: var(--orange);
+        border-bottom: 1px groove hsla(0, 0%, 53%, 0.5);
+        margin: 2rem 0 1rem 0;
+        font-weight: 500;
+    }
+
+    .per-cards img {
+        width: 80%;
+    }
+#contact h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    color: var(--green);
+}
+
+#contact h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+
+#msg {
+    margin: 1rem auto;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 24px;
+    font-size: 0.9rem;
+}

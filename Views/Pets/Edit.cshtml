@@ -1,0 +1,46 @@
+﻿@model PetStoreApp_Project.Models.Pet
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="row">
+    <h1 style="margin:0;">Edit</h1>
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ImgId" />
+            <div style="margin: 22px 8px;" class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input style="border-radius: 6px; padding: 4px;" asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div style="margin: 22px 8px;" class="form-group">
+                <label asp-for="price" class="control-label"></label>
+                <input style="border-radius: 6px; padding: 4px;" asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div style="margin: 22px 8px;" class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input style="border-radius: 6px; padding: 4px;" asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div style="margin: 22px 8px;" class="form-group">
+                <label asp-for="ImgFile" class="control-label"></label>
+                <input style="border-radius: 6px; padding: 4px;6px;background-color:#65c178;" asp-for="ImgFile" type="file" class="form-control" />
+                <span asp-validation-for="ImgFile" class="text-danger"></span>
+            </div>
+            <div style="margin-left: 20px;" class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="margin-left: 20px; margin-top: 20px;">
+    <a class="main-btn" asp-action="Index">Back to List</a>
+</div>
+
